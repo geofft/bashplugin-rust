@@ -3,3 +3,8 @@
 name = "bashplugin"
 version = "0.0.1"
 authors = ["Geoffrey Thomas <geofft@ldpreload.com>"]
+
+[lib]
+
+name = "bashplugin"
+crate-type = ["dylib"]
