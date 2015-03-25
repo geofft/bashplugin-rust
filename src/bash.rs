@@ -1,3 +1,5 @@
+#![allow(non_camel_case_types, dead_code)]
+
 extern crate libc;
 
 // command.h
@@ -15,7 +17,7 @@ pub struct word_list {
 
 // general.h
 
-type sh_builtin_func_t = extern fn (*mut word_list) -> libc::c_int;
+pub type sh_builtin_func_t = extern fn (*mut word_list) -> libc::c_int;
 
 // builtins.h
 
